@@ -1,0 +1,299 @@
+.viewport {
+  width: 1440px;
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #000;
+  margin: auto;
+  background-color: #ffffff;
+
+  >.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+
+    >.logo {
+      border: none;
+
+      >.logo_button {
+        transition: filter 300ms;
+        background-color: #ffffff;
+        width: 111px;
+        font-family: GT Super Txt Trial;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+        border: none;
+      }
+    }
+
+    >.group_button {
+      display: flex;
+      justify-content: space-between;
+      width: 390px;
+
+      >.button1,
+      .button2,
+      .button3 {
+        font-family: GT Super Txt Trial;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        border: none;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+
+      .button1,
+      .button2 {
+        display: inline-flex;
+        width: 90px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .button2 {
+        width: 80px;
+      }
+    }
+  }
+
+  >.content {
+    width: 2232px;
+    height: 2000px;
+    position: absolute;
+    top: -396px;
+    left: -488px;
+
+    >.gallery {
+      >.row {
+        display: flex;
+        flex-direction: row;
+        gap: 184px;
+
+        &.single {
+          flex-direction: column;
+          gap: 0;
+
+          >.col {
+            margin-top: 1000px;
+            margin-left: 600px;
+            gap: 0;
+
+            >.image {
+              >img {
+                width: 50px;
+              }
+            }
+
+            &:nth-child(-n + 5) {
+              margin-top: 0px;
+            }
+          }
+        }
+
+        >.col {
+          display: flex;
+          flex-direction: column;
+          gap: 192px;
+
+          >.image {
+            >img {
+              width: 212px;
+            }
+          }
+
+          &:nth-child(1) {
+            margin-top: -390px;
+          }
+
+          &:nth-child(2) {
+            margin-top: -325px;
+          }
+
+          &:nth-child(3) {
+            margin-top: -250px;
+          }
+
+          &:nth-child(4) {
+            margin-top: 0px;
+          }
+
+          &:nth-child(5) {
+            margin-top: -320px;
+          }
+
+          &:nth-child(6) {
+            margin-top: -135px;
+          }
+        }
+      }
+    }
+
+    >.big-gallery {
+      position: absolute;
+      top: 100px;
+      left: 20%;
+
+      >.col {
+        margin-top: -120px;
+
+        >.image-big {
+          >.number {
+            font-family: Synthes Grotesk Trial;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: left;
+            color: #6a6a6a;
+            margin-left: -107px;
+            margin-top: 220px;
+          }
+
+          >.helper_d,
+          .helper_t {
+            font-family: Synthes Grotesk Trial;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: left;
+            color: #6a6a6a;
+            margin-left: 166px;
+          }
+
+          >.helper_d {
+            margin-top: 16px;
+          }
+
+          >.helper_t {
+            margin-top: 40px;
+          }
+
+          >.helper_d_v,
+          .helper_t_v {
+            font-family: GT Super Txt Trial;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 19px;
+            text-align: left;
+            color: #000000;
+            margin-left: 184px;
+            margin-top: 12px;
+          }
+
+          >.big-img-text {
+            display: flex;
+
+            >.big-img {
+              width: 580px;
+              height: auto;
+              margin-top: 96px;
+            }
+
+            >.text {
+
+              >.helper_p,
+              .helper_d,
+              .helper_l {
+                font-family: Synthes Grotesk Trial;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: left;
+                color: #6a6a6a;
+                margin-left: 191px;
+              }
+
+              >.helper_p_v,
+              .helper_d_v,
+              .helper_l_v {
+                font-family: GT Super Txt Trial;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                color: #000000;
+                margin-left: 211px;
+                max-width: 300px;
+                margin-top: 12px;
+              }
+
+              >.helper_d,
+              .helper_l {
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.single-viewport {
+    overflow: scroll;
+
+    >.coordinates {
+      visibility: hidden;
+    }
+
+    >.content {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      margin-top: 396px;
+
+      >.gallery {
+        width: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 0;
+
+        >.row {
+          position: absolute;
+          top: 500px;
+          left: -500px;
+        }
+      }
+    }
+  }
+}
+
+.text_box {
+  position: relative;
+}
+
+.line-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.line {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  transition: transform 0.3s ease, filter 0.3s ease;
+
+  &.hovered {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    z-index: 1;
+  }
+
+  &.dimmed {
+    transform: scale(0.8);
+    filter: brightness(0.8);
+  }
+}
